@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>using-while-loop</title>
+</head>
+<body>
+<button type="button" onclick ="lap1()">Bài 1: Tiếp tục khi chưa phải (-1)</button>
+<button type="button" onclick ="show(parseInt(prompt('Nhập vào số ô muốn vẽ:')))">Bài 2: Hiển thị thẻ BR</button>
+</body>
+<script>
+    function lap1(){
+        let t = 0;
+        let a = 0;
+        while (a !=-1){
+            a =parseInt( prompt("Enter a number: "));
+            alert(a);
+            t = t + a;
+        }
+        alert(t);
+    }
+    function show(n){
+        let i = 0;
+        while (i<n){
+            document.write("<hr width = "+i+"%>");
+            i++;
+        }
+    }
+</script>
+</html>
